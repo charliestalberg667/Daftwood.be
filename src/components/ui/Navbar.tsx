@@ -11,10 +11,10 @@ export default function Navbar() {
   const pathname = usePathname();
 
   const onLanguageChange = (newLocale: string) => {
-    // Remove the current locale prefix (if any) from the pathname
-    const pathWithoutLocale = pathname.replace(/^\/(en|nl|fr)(?=\/|$)/, '');
-    const newPath = `/${newLocale}${pathWithoutLocale || '/'}`.replace(/\/$/, '');
-    router.replace(newPath);
+    // Remove existing locale prefix if present
+    const pathWithoutLocale = pathname.replace(/^\/(en|nl|fr)(?=\/|$)/, '') || '/';
+    const newPath = `/${newLocale}${pathWithoutLocale}`.replace(/\/+/g, '/');
+    router.push(newPath);
   };
 
   return (
@@ -26,7 +26,7 @@ export default function Navbar() {
               Daftwood
             </Link>
           </div>
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="flex items-center space-x-8">
             <a href="#services" className="text-gray-700 hover:text-daft-blue px-3 py-2 rounded-md text-sm font-medium">{t('services')}</a>
             <a href="#about" className="text-gray-700 hover:text-daft-blue px-3 py-2 rounded-md text-sm font-medium">{t('about')}</a>
 
