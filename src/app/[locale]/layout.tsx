@@ -8,9 +8,9 @@ const inter = Inter({
   variable: '--font-inter',
 });
 
-export default async function LocaleLayout({ children, params }: { children: React.ReactNode; params: { locale: string } }) {
+export default function LocaleLayout({ children, params }: { children: React.ReactNode; params: { locale: string } }) {
   const { locale } = params;
-  const messages = await getMessages();
+  const messages = getMessages();
 
   return (
     <html lang={locale} className={`${inter.variable} font-sans`}>
