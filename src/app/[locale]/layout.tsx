@@ -40,11 +40,14 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({
   children,
-  params: { locale },
+  params,
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  // In Next.js 15, route `params` in async components are now provided as a Promise
+  // See: https://nextjs.org/blog/next-15#async-params
+  params: Promise<{ locale: string }>;
 }) {
+  const { locale } = await params;
   const messages = await getMessages();
 
   return (
