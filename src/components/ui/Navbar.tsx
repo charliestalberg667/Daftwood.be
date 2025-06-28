@@ -1,8 +1,6 @@
 "use client";
 
 import Link from 'next/link';
-
-
 export default function Navbar() {
   return (
     <nav className="bg-dp-black shadow-lg fixed w-full z-10">

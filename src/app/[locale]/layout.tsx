@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
-
 import '../globals.css';
 
 const inter = Inter({
@@ -42,13 +41,10 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-
   return (
-    <html lang="fr" className={`${inter.variable} font-sans`}>
+    <html lang="en" className={`${inter.variable} font-sans`}>
       <body className="min-h-screen bg-white text-gray-900 antialiased">
-
-          {children}
-
+        {children}
       </body>
     </html>
   );
