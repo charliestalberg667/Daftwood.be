@@ -42,8 +42,8 @@ export default function ContactForm() {
     return (
       <div className="bg-green-50 border border-green-200 rounded-lg p-6 text-center">
         <div className="text-5xl mb-4">🎉</div>
-        <h3 className="text-xl font-bold text-green-800 mb-2">Thank You!</h3>
-        <p className="text-green-700">Your message has been sent successfully. We&apos;ll get back to you within 24 hours.</p>
+        <h3 className="text-xl font-bold text-green-800 mb-2">Merci !</h3>
+        <p className="text-green-700">Votre message a été envoyé avec succès. Nous vous répondrons dans les 24 heures.</p>
       </div>
     );
   }
@@ -52,7 +52,7 @@ export default function ContactForm() {
     <form onSubmit={handleSubmit} className="space-y-6">
       <div>
         <label htmlFor="name" className="block text-sm font-medium text-gray-700">
-          Full Name *
+          Nom complet *
         </label>
         <input
           type="text"
@@ -68,7 +68,7 @@ export default function ContactForm() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-            Email *
+            E-mail *
           </label>
           <input
             type="email"
@@ -83,7 +83,7 @@ export default function ContactForm() {
 
         <div>
           <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
-            Phone Number
+            Numéro de téléphone
           </label>
           <input
             type="tel"
@@ -98,7 +98,7 @@ export default function ContactForm() {
 
       <div>
         <label htmlFor="service" className="block text-sm font-medium text-gray-700">
-          Service Interested In
+          Service souhaité
         </label>
         <select
           id="service"
@@ -107,19 +107,19 @@ export default function ContactForm() {
           onChange={handleChange}
           className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 p-3 border bg-white"
         >
-          <option value="">Select a service</option>
-          <option value="residential">Residential Painting</option>
-          <option value="commercial">Commercial Painting</option>
-          <option value="exterior">Exterior Painting</option>
-          <option value="interior">Interior Painting</option>
-          <option value="cabinets">Cabinet Refinishing</option>
-          <option value="consultation">Color Consultation</option>
+          <option value="">Sélectionnez un service</option>
+          <option value="residential">Peinture résidentielle</option>
+          <option value="commercial">Peinture commerciale</option>
+          <option value="exterior">Peinture extérieure</option>
+          <option value="interior">Peinture intérieure</option>
+          <option value="cabinets">Rénovation d'armoires</option>
+          <option value="consultation">Consultation couleur</option>
         </select>
       </div>
 
       <div>
         <label htmlFor="message" className="block text-sm font-medium text-gray-700">
-          Tell Us About Your Project *
+          Parlez-nous de votre projet *
         </label>
         <textarea
           id="message"
@@ -138,7 +138,7 @@ export default function ContactForm() {
           disabled={isSubmitting}
           className="w-full bg-blue-600 text-white py-3 px-6 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          {isSubmitting ? 'Sending...' : 'Get Your Free Quote'}
+          {isSubmitting ? 'Envoi...' : 'Obtenez votre devis gratuit'}
         </button>
       </div>
     </form>

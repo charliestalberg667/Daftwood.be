@@ -8,15 +8,15 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Daftwood Painting</h3>
             <p className="text-gray-400">
-              Professional painting services for residential and commercial properties. Quality workmanship guaranteed.
+              Services de peinture professionnels pour propriétés résidentielles et commerciales. Travail de qualité garanti.
             </p>
           </div>
           
           <div>
-            <h4 className="text-sm font-semibold text-daft-blue uppercase tracking-wider mb-4">Quick Links</h4>
+            <h4 className="text-sm font-semibold text-daft-blue uppercase tracking-wider mb-4">Liens rapides</h4>
             <ul className="space-y-2">
               <li><a href="#services" className="text-gray-300 hover:text-white">Services</a></li>
-              <li><a href="#about" className="text-gray-300 hover:text-white">About Us</a></li>
+              <li><a href="#about" className="text-gray-300 hover:text-white">À propos</a></li>
               <li><a href="#contact" className="text-gray-300 hover:text-white">Contact</a></li>
             </ul>
           </div>
@@ -24,19 +24,19 @@ export default function Footer() {
           <div>
             <h4 className="text-sm font-semibold text-daft-blue uppercase tracking-wider mb-4">Services</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-300 hover:text-white">Residential Painting</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white">Commercial Painting</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white">Exterior Painting</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white">Interior Painting</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white">Cabinet Refinishing</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white">Peinture résidentielle</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white">Peinture commerciale</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white">Peinture extérieure</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white">Peinture intérieure</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white">Rénovation d'armoires</a></li>
             </ul>
           </div>
           
           <div>
-            <h4 className="text-sm font-semibold text-daft-blue uppercase tracking-wider mb-4">Contact Us</h4>
+            <h4 className="text-sm font-semibold text-daft-blue uppercase tracking-wider mb-4">Contactez-nous</h4>
             <address className="not-italic text-gray-300 space-y-2">
               <p>123 Painters Lane<br />Cityville, 12345</p>
-              <p>Phone: <a href="tel:0477262601" className="hover:text-white">04 77 26 26 01</a></p>
+              <p>Téléphone : <a href="tel:0477262601" className="hover:text-white">04 77 26 26 01</a></p>
               <p>Email: <a href="mailto:fabrice.perra@telenet.be" className="hover:text-white">fabrice.perra@telenet.be</a></p>
             </address>
           </div>
@@ -44,7 +44,7 @@ export default function Footer() {
         
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            &copy; {currentYear} Daftwood Painting. All rights reserved.
+            &copy; {currentYear} Daftwood Painting. Tous droits réservés.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-gray-400 hover:text-white">
@@ -71,15 +71,15 @@ export default function Footer() {
         <div className="mt-8 pt-8 border-t border-gray-800">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
             <div className="flex flex-wrap justify-center md:justify-start gap-4 mb-4 md:mb-0">
-              <a href="#" className="hover:text-white">Privacy Policy</a>
+              <a href="#" className="hover:text-white">Politique de confidentialité</a>
               <span>•</span>
-              <a href="#" className="hover:text-white">Terms of Service</a>
+              <a href="#" className="hover:text-white">Conditions d'utilisation</a>
               <span>•</span>
-              <a href="#" className="hover:text-white">Cookie Policy</a>
+              <a href="#" className="hover:text-white">Politique de cookies</a>
             </div>
             <div className="text-center md:text-right">
-              <p>Licensed • Bonded • Insured</p>
-              <p className="text-xs mt-1">License #1234567</p>
+              <p>Sous licence • Cautionné • Assuré</p>
+              <p className="text-xs mt-1">Licence n°1234567</p>
             </div>
           </div>
         </div>

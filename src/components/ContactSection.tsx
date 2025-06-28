@@ -6,16 +6,16 @@ export default function ContactSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-            Get In Touch
+            Contactez-nous
           </h2>
           <p className="mt-4 text-xl text-gray-600">
-            Ready to transform your space? Contact us today for a free quote!
+            Prêt à transformer votre espace ? Contactez-nous dès aujourd'hui pour un devis gratuit !
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="bg-white p-8 rounded-xl shadow-md">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">Contact Information</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-6">Informations de contact</h3>
             <div className="space-y-6">
               <div className="flex items-start">
                 <div className="flex-shrink-0 h-6 w-6 text-daft-blue">
@@ -24,7 +24,7 @@ export default function ContactSection() {
                   </svg>
                 </div>
                 <div className="ml-3">
-                  <p className="text-gray-500">Email us at</p>
+                  <p className="text-gray-500">Envoyez-nous un email à</p>
                   <a href="mailto:fabrice.perra@telenet.be" className="text-gray-900 font-medium hover:text-daft-blue">fabrice.perra@telenet.be</a>
                 </div>
               </div>
@@ -36,7 +36,7 @@ export default function ContactSection() {
                   </svg>
                 </div>
                 <div className="ml-3">
-                  <p className="text-gray-500">Call us at</p>
+                  <p className="text-gray-500">Appelez-nous au</p>
                   <a href="tel:0477262601" className="text-gray-900 font-medium hover:text-daft-blue">04 77 26 26 01</a>
                 </div>
               </div>
@@ -49,7 +49,7 @@ export default function ContactSection() {
                   </svg>
                 </div>
                 <div className="ml-3">
-                  <p className="text-gray-500">Our location</p>
+                  <p className="text-gray-500">Notre adresse</p>
                   <p className="text-gray-900 font-medium">123 Painters Lane, Cityville, 12345</p>
                 </div>
               </div>
@@ -61,18 +61,18 @@ export default function ContactSection() {
                   </svg>
                 </div>
                 <div className="ml-3">
-                  <p className="text-gray-500">Business Hours</p>
+                  <p className="text-gray-500">Heures d'ouverture</p>
                   <p className="text-gray-900 font-medium">
-                    Monday - Friday: 8:00 AM - 6:00 PM<br />
-                    Saturday: 9:00 AM - 4:00 PM<br />
-                    Sunday: Closed
+                    Lundi - Vendredi : 8h00 - 18h00<br />
+                    Samedi : 9h00 - 16h00<br />
+                    Dimanche : Fermé
                   </p>
                 </div>
               </div>
             </div>
 
             <div className="mt-10">
-              <h4 className="text-lg font-semibold text-gray-900 mb-4">Follow Us</h4>
+              <h4 className="text-lg font-semibold text-gray-900 mb-4">Suivez-nous</h4>
               <div className="flex space-x-4">
                 <a href="#" className="text-gray-500 hover:text-daft-blue">
                   <span className="sr-only">Facebook</span>
@@ -97,7 +97,7 @@ export default function ContactSection() {
           </div>
 
           <div className="bg-white p-8 rounded-xl shadow-md">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">Send Us a Message</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-6">Envoyez-nous un message</h3>
             <ContactForm />
           </div>
         </div>
