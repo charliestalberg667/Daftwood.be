@@ -9,11 +9,6 @@ export default createMiddleware({
 });
  
 export const config = {
-  matcher: [
-    '/((?!api|_next/static|_next/image|favicon.ico|.*\..*).*)',
-    '/',
-    '/en/:path*',
-    '/nl/:path*',
-    '/fr/:path*'
-  ]
+  // Match only internationalized pathnames
+  matcher: ['/', '/(en|nl|fr)/:path*']
 };
