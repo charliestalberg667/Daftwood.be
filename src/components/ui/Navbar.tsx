@@ -11,7 +11,9 @@ export default function Navbar() {
   const pathname = usePathname();
 
   const onLanguageChange = (newLocale: string) => {
-    const newPath = pathname.replace(`/${locale}`, `/${newLocale}`);
+    // Remove the current locale prefix (if any) from the pathname
+    const pathWithoutLocale = pathname.replace(/^\/(en|nl|fr)(?=\/|$)/, '');
+    const newPath = `/${newLocale}${pathWithoutLocale || '/'}`.replace(/\/$/, '');
     router.replace(newPath);
   };
 
