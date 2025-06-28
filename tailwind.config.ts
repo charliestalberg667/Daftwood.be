@@ -9,6 +9,11 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        'dp-black': '#000000',
+        'dp-gold': '#FFD700',
+        'dp-silver': '#C0C0C0',
+        'dp-neon-blue': '#00E5FF',
+        'dp-neon-pink': '#FF006F',
         'daft-dark': '#333333',
         'daft-light-gray': '#f0f0f0',
         'daft-blue': '#007bff',

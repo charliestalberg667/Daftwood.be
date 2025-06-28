@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next';
-import { Inter } from 'next/font/google';
+import { Inter, Space_Mono } from 'next/font/google';
 
 import './globals.css';
 
@@ -7,6 +7,12 @@ const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-inter',
+});
+
+const mono = Space_Mono({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-mono',
 });
 
 export const viewport: Viewport = {
@@ -51,8 +57,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="fr" className={`${inter.variable} font-sans`}>
-      <body className="min-h-screen bg-white text-gray-900 antialiased">
+    <html lang="fr" className={`${inter.variable} ${mono.variable} font-sans`}>
+      <body className="min-h-screen bg-dp-black text-dp-silver antialiased">
         {children}
       </body>
     </html>
