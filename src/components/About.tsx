@@ -17,7 +17,7 @@ export default function About() {
               <div className="bg-daft-light-gray p-6 rounded-lg">
                 <h3 className="text-lg font-semibold text-daft-dark mb-2">Our Mission</h3>
                 <p className="text-daft-dark">
-                  To deliver exceptional painting services that enhance the beauty and value of our clients' properties, while maintaining the highest standards of professionalism, integrity, and customer service.
+                  To deliver exceptional painting services that enhance the beauty and value of our clients&apos; properties, while maintaining the highest standards of professionalism, integrity, and customer service.
                 </p>
               </div>
             </div>
@@ -53,7 +53,7 @@ export default function About() {
                     </svg>
                   </div>
                   <span className="ml-3 text-gray-700">
-                    <strong>Satisfaction Guaranteed:</strong> We're not satisfied until you are completely happy with the results
+                    <strong>Satisfaction Guaranteed:</strong> We&apos;re not satisfied until you are completely happy with the results
                   </span>
                 </li>
                 <li className="flex items-start">
