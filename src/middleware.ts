@@ -12,6 +12,8 @@ export const config = {
   matcher: [
     '/((?!api|_next/static|_next/image|favicon.ico|.*\..*).*)',
     '/',
-    `/(${locales.join('|')})/:path*`
+    '/en/:path*',
+    '/nl/:path*',
+    '/fr/:path*'
   ]
 };
