@@ -1,6 +1,8 @@
+import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 import { getMessages } from 'next-intl/server';
 import { Providers } from '@/providers';
+import '../globals.css';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -8,9 +10,42 @@ const inter = Inter({
   variable: '--font-inter',
 });
 
-export default function LocaleLayout({ children, params }: { children: React.ReactNode; params: { locale: string } }) {
-  const { locale } = params;
-  const messages = getMessages();
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
+    { media: '(prefers-color-scheme: dark)', color: '#1a1a1a' },
+  ],
+};
+
+export const metadata: Metadata = {
+  metadataBase: new URL('https://daftwood.com'),
+  title: {
+    default: 'Daftwood | Professional Painting Services',
+    template: '%s | Daftwood',
+  },
+  description: 'Professional painting services for residential and commercial properties. Quality workmanship guaranteed. Contact us for a free quote today!',
+  keywords: ['painting services', 'house painting', 'commercial painting', 'interior painting', 'exterior painting', 'professional painters'],
+  authors: [{ name: 'Daftwood' }],
+  creator: 'Daftwood',
+  publisher: 'Daftwood',
+  formatDetection: {
+    email: true,
+    address: true,
+    telephone: true,
+  },
+};
+
+export default async function RootLayout({
+  children,
+  params: { locale },
+}: {
+  children: React.ReactNode;
+  params: { locale: string };
+}) {
+  const messages = await getMessages();
 
   return (
     <html lang={locale} className={`${inter.variable} font-sans`}>
