@@ -9,7 +9,7 @@ export default function ContactSection() {
             Contactez-nous
           </h2>
           <p className="mt-4 text-xl text-gray-600">
-            Prêt à transformer votre espace ? Contactez-nous dès aujourd'hui pour un devis gratuit !
+            Prêt à transformer votre espace ? Contactez-nous dès aujourd’hui pour un devis gratuit !
           </p>
         </div>
 
@@ -61,7 +61,7 @@ export default function ContactSection() {
                   </svg>
                 </div>
                 <div className="ml-3">
-                  <p className="text-gray-500">Heures d'ouverture</p>
+                  <p className="text-gray-500">Heures d’ouverture</p>
                   <p className="text-gray-900 font-medium">
                     Lundi - Vendredi : 8h00 - 18h00<br />
                     Samedi : 9h00 - 16h00<br />

@@ -28,7 +28,7 @@ export default function Footer() {
               <li><a href="#" className="text-gray-300 hover:text-white">Peinture commerciale</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white">Peinture extérieure</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white">Peinture intérieure</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white">Rénovation d'armoires</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white">Rénovation d’armoires</a></li>
             </ul>
           </div>
           
@@ -73,7 +73,7 @@ export default function Footer() {
             <div className="flex flex-wrap justify-center md:justify-start gap-4 mb-4 md:mb-0">
               <a href="#" className="hover:text-white">Politique de confidentialité</a>
               <span>•</span>
-              <a href="#" className="hover:text-white">Conditions d'utilisation</a>
+              <a href="#" className="hover:text-white">Conditions d’utilisation</a>
               <span>•</span>
               <a href="#" className="hover:text-white">Politique de cookies</a>
             </div>
