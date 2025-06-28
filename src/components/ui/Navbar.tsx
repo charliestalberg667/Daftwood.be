@@ -1,21 +1,10 @@
 "use client";
 
 import Link from 'next/link';
-import { useLocale, useTranslations } from 'next-intl';
-import { usePathname, useRouter } from 'next/navigation';
+import { useTranslations } from 'next-intl';
 
 export default function Navbar() {
   const t = useTranslations('Navbar');
-  const locale = useLocale();
-  const router = useRouter();
-  const pathname = usePathname();
-
-  const onLanguageChange = (newLocale: string) => {
-    // Remove existing locale prefix if present
-    const pathWithoutLocale = pathname.replace(/^\/(en|nl|fr)(?=\/|$)/, '') || '/';
-    const newPath = `/${newLocale}${pathWithoutLocale}`.replace(/\/+/g, '/');
-    router.push(newPath);
-  };
 
   return (
     <nav className="bg-white shadow-lg fixed w-full z-10">
@@ -30,30 +19,7 @@ export default function Navbar() {
             <a href="#services" className="text-gray-700 hover:text-daft-blue px-3 py-2 rounded-md text-sm font-medium">{t('services')}</a>
             <a href="#about" className="text-gray-700 hover:text-daft-blue px-3 py-2 rounded-md text-sm font-medium">{t('about')}</a>
 
-            <div className="flex items-center bg-gray-100 rounded-lg p-1">
-              <button
-                onClick={() => onLanguageChange('nl')}
-                className={`px-3 py-1 rounded-md text-sm font-medium transition-colors ${
-                  locale === 'nl'
-                    ? 'bg-daft-blue text-white shadow'
-                    : 'text-gray-700 hover:bg-gray-200'
-                }`}
-              >
-                NL
-              </button>
-              <button
-                onClick={() => onLanguageChange('fr')}
-                className={`px-3 py-1 rounded-md text-sm font-medium transition-colors ${
-                  locale === 'fr'
-                    ? 'bg-daft-blue text-white shadow'
-                    : 'text-gray-700 hover:bg-gray-200'
-                }`}
-              >
-                FR
-              </button>
-            </div>
-
-            <a 
+<a 
               href="#contact" 
               className="bg-daft-dark text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-gray-800 transition-colors"
             >

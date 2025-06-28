@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
-import { getMessages } from 'next-intl/server';
 import { Providers } from '@/providers';
 import '../globals.css';
 
@@ -38,22 +37,15 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
-  params,
 }: {
   children: React.ReactNode;
-  // In Next.js 15, route `params` in async components are now provided as a Promise
-  // See: https://nextjs.org/blog/next-15#async-params
-  params: Promise<{ locale: string }>;
 }) {
-  const { locale } = await params;
-  const messages = await getMessages();
-
   return (
-    <html lang={locale} className={`${inter.variable} font-sans`}>
+    <html lang="en" className={`${inter.variable} font-sans`}>
       <body className="min-h-screen bg-white text-gray-900 antialiased">
-        <Providers locale={locale} messages={messages}>
+        <Providers>
           {children}
         </Providers>
       </body>
