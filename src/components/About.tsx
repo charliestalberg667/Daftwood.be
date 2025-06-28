@@ -9,15 +9,15 @@ export default function About() {
             </h2>
             <div className="prose prose-lg text-gray-600 space-y-6">
               <p>
-                Avec plus de 15 ans d'expérience dans l'industrie de la peinture, Daftwood transforme les propriétés et dépasse les attentes des clients. Ce qui a commencé comme une petite entreprise familiale est devenu un nom de confiance dans la communauté, reconnu pour notre attention aux détails et notre engagement envers la qualité.
+                Avec plus de 15 ans d’expérience dans l’industrie de la peinture, Daftwood transforme les propriétés et dépasse les attentes des clients. Ce qui a commencé comme une petite entreprise familiale est devenu un nom de confiance dans la communauté, reconnu pour notre attention aux détails et notre engagement envers la qualité.
               </p>
               <p>
-                Notre fondateur, Fabrice, supervise personnellement chaque projet pour garantir les normes les plus élevées. Nous croyons qu'une nouvelle couche de peinture peut faire plus que changer l'apparence d'un espace : elle peut transformer la façon dont vous ressentez votre maison ou votre entreprise.
+                Notre fondateur, Fabrice, supervise personnellement chaque projet pour garantir les normes les plus élevées. Nous croyons qu’une nouvelle couche de peinture peut faire plus que changer l’apparence d’un espace : elle peut transformer la façon dont vous ressentez votre maison ou votre entreprise.
               </p>
               <div className="bg-daft-light-gray p-6 rounded-lg">
                 <h3 className="text-lg font-semibold text-daft-dark mb-2">Notre mission</h3>
                 <p className="text-daft-dark">
-                  Fournir des services de peinture exceptionnels qui améliorent la beauté et la valeur des propriétés de nos clients, tout en maintenant les normes les plus élevées de professionnalisme, d'intégrité et de service client.
+                  Fournir des services de peinture exceptionnels qui améliorent la beauté et la valeur des propriétés de nos clients, tout en maintenant les normes les plus élevées de professionnalisme, d’intégrité et de service client.
                 </p>
               </div>
             </div>
@@ -33,7 +33,7 @@ export default function About() {
                     </svg>
                   </div>
                   <span className="ml-3 text-gray-700">
-                    <strong>Professionnels expérimentés :</strong> Notre équipe est composée de peintres qualifiés avec des années d'expérience
+                    <strong>Professionnels expérimentés :</strong> Notre équipe est composée de peintres qualifiés avec des années d’expérience
                   </span>
                 </li>
                 <li className="flex items-start">
@@ -53,7 +53,7 @@ export default function About() {
                     </svg>
                   </div>
                   <span className="ml-3 text-gray-700">
-                    <strong>Satisfaction garantie :</strong> Nous ne sommes pas satisfaits tant que vous n'êtes pas entièrement satisfait du résultat
+                    <strong>Satisfaction garantie :</strong> Nous ne sommes pas satisfaits tant que vous n’êtes pas entièrement satisfait du résultat
                   </span>
                 </li>
                 <li className="flex items-start">
@@ -69,7 +69,7 @@ export default function About() {
               </ul>
             </div>
             <div className="bg-daft-dark text-white p-6 rounded-xl">
-              <h3 className="text-xl font-semibold mb-4">Plus de 15 ans d'excellence</h3>
+              <h3 className="text-xl font-semibold mb-4">Plus de 15 ans d’excellence</h3>
               <p className="text-gray-300 mb-4">
                 Au service de la communauté avec fierté et transformation des espaces depuis 2008
               </p>

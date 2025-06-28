@@ -112,7 +112,7 @@ export default function ContactForm() {
           <option value="commercial">Peinture commerciale</option>
           <option value="exterior">Peinture extérieure</option>
           <option value="interior">Peinture intérieure</option>
-          <option value="cabinets">Rénovation d'armoires</option>
+          <option value="cabinets">Rénovation d’armoires</option>
           <option value="consultation">Consultation couleur</option>
         </select>
       </div>
