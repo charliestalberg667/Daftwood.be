@@ -9,12 +9,8 @@ const inter = Inter({
   variable: '--font-inter',
 });
 
-type Props = {
-  children: ReactNode;
-  params: { locale: string };
-};
-
-export default async function LocaleLayout({ children, params: { locale } }: Props) {
+export default async function LocaleLayout({ children, params }: { children: React.ReactNode; params: { locale: string } }) {
+  const { locale } = params;
   const messages = await getMessages();
 
   return (
