@@ -1,0 +1,35 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Diensten",
+    "about": "Over Ons",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Professionele Schilderdiensten",
+    "subtitle": "Kwaliteitswerk voor uw huis of bedrijf",
+    "cta": "Vraag een Gratis Offerte Aan"
+  },
+  "services": {
+    "title": "Onze Diensten",
+    "residential": "Particuliere Schilderdiensten",
+    "commercial": "Zakelijke Schilderdiensten",
+    "interior": "Binnenhuisschilderwerk",
+    "exterior": "Buitenschilderwerk"
+  },
+  "about": {
+    "title": "Over Ons",
+    "description": "Met jarenlange ervaring bieden wij hoogwaardige schilderdiensten voor zowel particuliere als zakelijke panden."
+  },
+  "contact": {
+    "title": "Neem Contact Op",
+    "name": "Naam",
+    "email": "E-mail",
+    "message": "Bericht",
+    "submit": "Verstuur Bericht",
+    "success": "Bedankt voor uw bericht! Wij nemen zo spoedig mogelijk contact met u op."
+  },
+  "footer": {
+    "rights": "Alle rechten voorbehouden."
+  }
+}

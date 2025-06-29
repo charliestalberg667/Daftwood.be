@@ -1,0 +1,35 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Professional Painting Services",
+    "subtitle": "Quality workmanship for your home or business",
+    "cta": "Get a Free Quote"
+  },
+  "services": {
+    "title": "Our Services",
+    "residential": "Residential Painting",
+    "commercial": "Commercial Painting",
+    "interior": "Interior Painting",
+    "exterior": "Exterior Painting"
+  },
+  "about": {
+    "title": "About Us",
+    "description": "With years of experience, we provide top-quality painting services for both residential and commercial properties."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "submit": "Send Message",
+    "success": "Thank you for your message! We'll get back to you soon."
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}

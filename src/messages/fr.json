@@ -1,0 +1,35 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "services": "Services",
+    "about": "À propos",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Services de Peinture Professionnels",
+    "subtitle": "Travail de qualité pour votre maison ou entreprise",
+    "cta": "Obtenir un Devis Gratuit"
+  },
+  "services": {
+    "title": "Nos Services",
+    "residential": "Peinture Résidentielle",
+    "commercial": "Peinture Commerciale",
+    "interior": "Peinture Intérieure",
+    "exterior": "Peinture Extérieure"
+  },
+  "about": {
+    "title": "À Propos de Nous",
+    "description": "Avec des années d'expérience, nous offrons des services de peinture de haute qualité pour les propriétés résidentielles et commerciales."
+  },
+  "contact": {
+    "title": "Contactez-Nous",
+    "name": "Nom",
+    "email": "Email",
+    "message": "Message",
+    "submit": "Envoyer le Message",
+    "success": "Merci pour votre message ! Nous vous répondrons bientôt."
+  },
+  "footer": {
+    "rights": "Tous droits réservés."
+  }
+}

@@ -1,21 +1,18 @@
-import Navbar from '@/components/ui/Navbar';
+import { useTranslations } from 'next-intl';
 import Hero from '@/components/Hero';
 import Services from '@/components/Services';
 import About from '@/components/About';
 import ContactSection from '@/components/ContactSection';
-import Footer from '@/components/Footer';
 
 export default function Home() {
+  const t = useTranslations();
+  
   return (
-    <>
-      <Navbar />
-      <main>
-        <Hero />
-        <Services />
-        <About />
-        <ContactSection />
-      </main>
-      <Footer />
-    </>
+    <main className="pt-16">
+      <Hero />
+      <Services />
+      <About />
+      <ContactSection />
+    </main>
   );
 }
