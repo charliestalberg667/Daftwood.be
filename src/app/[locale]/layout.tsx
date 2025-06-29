@@ -2,7 +2,7 @@ import { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 import { notFound } from 'next/navigation';
 import { NextIntlClientProvider } from 'next-intl';
-import { getRequestConfig } from 'next-intl/server';
+
 import '../globals.css';
 
 const inter = Inter({
@@ -54,12 +54,12 @@ export default async function RootLayout({
   params: { locale: string };
 }) {
   // Validate that the incoming `locale` parameter is valid
-  if (!locales.includes(locale as any)) notFound();
+  if (!locales.includes(locale as 'en' | 'fr' | 'nl')) notFound();
 
   let messages;
   try {
     messages = (await import(`../../messages/${locale}.json`)).default;
-  } catch (error) {
+  } catch (_) {
     notFound();
   }
 
